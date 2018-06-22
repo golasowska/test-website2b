@@ -1,0 +1,61 @@
+/* GLOBAL */
+
+@font-face {
+  font-family: 'Segoe';
+  src: url('../fonts/segoe-ui-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url('../fonts/SourceSansPro-Light.woff') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe';
+}
+
+.container {
+  /* max-width: 1198px; */
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(15, 60px [col-start]);
+  grid-template-rows: 80px 455px 379px 116px 230px 104px 100px;
+  grid-column-gap: 15px;
+  /* grid-row-gap: 15px; */
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/* NAVIGATION */
+
+.li-nav1 {
+  grid-column: col-start 0 / col-start 1;
+}
+
+.li-nav2 {
+  grid-column: col-start 2 / col-start 3;
+}
+
+.li-nav3 {
+  grid-column: col-start 4 / col-start 5;
+}
+
+.nav-hover {
+  font-size: 18px;
+  border-bottom: 7px solid transparent;
+}
+
+.nav-hover:hover {
+  transition: 0.3s ease-in-out;
+  border-image: url('../images/prostokat-1392.png') 50 round;
+}
+
+.logo-header {
+  background: #ff0c84;
+  padding: 55px 5px 5px 5px;
+  grid-column: col-start 6 / col-start 9;
+  justify-self: center;
+}
