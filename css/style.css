@@ -18,14 +18,11 @@
 }
 
 .container {
-  /* max-width: 1198px; */
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(15, 60px [col-start]);
-  /* grid-template-rows: 80px 455px 379px 116px 230px 104px 100px; */
   grid-template-rows: 80px;
   grid-column-gap: 15px;
-  /* grid-row-gap: 15px; */
   align-items: center;
 }
 
@@ -291,4 +288,114 @@
   line-height: 18px;
   font-size: 12px;
   margin-bottom: 0;
+}
+
+/* RWD */
+
+@media (max-width: 1200px) {
+  .container {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+  }
+
+  .banner {
+    max-height: 455px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-text {
+    font-size: 45px;
+    line-height: 46px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    margin-top: 15%;
+  }
+
+  .banner-paragraph {
+    padding: 0 20%;
+    overflow: hidden;
+    margin: 0 0 20% 0;
+    display: block;
+  }
+
+  .main-card {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  .boks {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+  }
+
+  .boks p:nth-child(1),
+  .boks p:nth-child(2),
+  .boks p:nth-child(3) {
+    text-align: left;
+    padding-right: 20%;
+  }
+
+  .image-main {
+    min-height: 379px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .gallery {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .image-gallery {
+    min-height: 230px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .image-gallery-descr {
+    height: 230px;
+    width: 80%;
+  }
+
+  .image-gallery-photo,
+  .image-gallery-photo1,
+  .image-gallery-photo2,
+  .image-gallery-photo3 {
+    height: 230px;
+    width: 80%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .logo-footer {
+    margin-right: 10%;
+  }
+  .footer-desc {
+    max-height: 90px;
+    overflow: hidden;
+  }
 }
